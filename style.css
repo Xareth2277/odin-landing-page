@@ -1,0 +1,44 @@
+body {
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.section-one .item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-two {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cards {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    gap: 5em;
+}
+
+
+.section-three {
+    display: flex;
+}
+
+
+.section-four {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer {
+    display: flex;
+    margin-top: auto;
+}
