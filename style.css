@@ -1,22 +1,66 @@
+/* ===============================================
+                    Body
+============================================== */
+
 body {
     min-height: 100vh;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.section-one .item {
+    margin: 1em 15em;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex: auto;
 }
 
+/* ===============================================
+                    Header
+============================================== */
+
+.header {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ===============================================
+                    Section One
+============================================== */
+
+.section-one {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-one .item {
+    width: 40%
+}
+
+.section-one h1 {
+    margin: 0;
+}
+
+.section-one button {
+    width: fit-content;
+    height: fit-content;
+}
+
+.section-one img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* ===============================================
+                    Section Two
+============================================== */
 
 .section-two {
+    flex: 1;
     display: flex;
     flex-flow: column wrap;
+    width: 80%;
 }
 
 .cards {
@@ -26,19 +70,50 @@ body {
     gap: 5em;
 }
 
+.cards img {
+    width: 175px;
+    height: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+}
+
+/* ===============================================
+                    Section Three
+============================================== */
 
 .section-three {
+    flex: 1;
     display: flex;
+    width: 80%;
 }
 
+/* ===============================================
+                    Section Four
+============================================== */
 
 .section-four {
+    flex: auto;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
+.section-four button {
+    width: fit-content;
+    height: fit-content;
+}
+
+/* ===============================================
+                    Footer
+============================================== */
 
 .footer {
+    flex: 1;
     display: flex;
     margin-top: auto;
 }
