@@ -4,7 +4,7 @@
 
 body {
     min-height: 100vh;
-    margin: 1em 15em;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,10 +16,28 @@ body {
 ============================================== */
 
 .header {
-    flex: 1;
+    width: 100%;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+}
+
+.header .items {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    width: 80%;
+}
+
+.header p {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #F9FAF8;
 }
 
 /* ===============================================
@@ -27,23 +45,38 @@ body {
 ============================================== */
 
 .section-one {
-    flex: 1;
+    width: 100%;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    color: #F9FAF8;
+}
+
+.section-one .items{
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.section-one .item {
+.section-one .text {
     width: 40%
 }
 
 .section-one h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.section-one h1, p {
     margin: 0;
 }
 
 .section-one button {
     width: fit-content;
     height: fit-content;
+    color: #F9FAF8;
+    background-color: #3882F6;
 }
 
 .section-one img {
@@ -63,21 +96,29 @@ body {
     width: 80%;
 }
 
+.section-two h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
 .cards {
     display: flex;
     flex: 1;
     justify-content: space-around;
     gap: 5em;
+    color: #1F2937;
 }
 
 .cards img {
-    width: 175px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5em;
     text-align: center;
 }
@@ -87,9 +128,28 @@ body {
 ============================================== */
 
 .section-three {
+    width: 100%;
     flex: 1;
     display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.section-three .text {
+    display: flex;
     width: 80%;
+    font-size: 36px;
+
+}
+
+.section-three .quote {
+    font-family: Merriweather, serif;
+    color: #1F2937;
+}
+
+.section-three .author {
+    font-size: 30px;
+    font-weight: 800;
 }
 
 /* ===============================================
@@ -100,12 +160,21 @@ body {
     flex: auto;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
+    color: #F9FAF8;
+    background-color: #3882F6;
+}
+
+.section-four h2 {
+    margin: 0;
 }
 
 .section-four button {
     width: fit-content;
     height: fit-content;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-color: #F9FAF8;
 }
 
 /* ===============================================
@@ -115,5 +184,5 @@ body {
 .footer {
     flex: 1;
     display: flex;
-    margin-top: auto;
+    justify-self: flex-end;
 }
